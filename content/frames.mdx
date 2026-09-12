@@ -1,0 +1,32 @@
+# Frames & units contract
+
+Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trusts these names.
+
+## Conventions (fill in as the design locks)
+
+| Item | Decision |
+|------|----------|
+| World / gravity frame | TBD (e.g. Z-up, right-hand) |
+| Base / pelvis frame | TBD |
+| Joint axis sense | Right-hand rule; positive = TBD |
+| Encoder zero | Mechanical stop / mid-range / calibrated home — TBD per joint |
+| Lengths | meters |
+| Angles | radians in software; degrees only in human docs |
+| Mass / inertia | kg, kg·m² about link CoM |
+| Torque / force | N·m, N |
+| Time | seconds; loop rates in Hz |
+
+## Named links & joints
+
+| Link | Parent | Joint | Axis | Limits (rad) | Notes |
+|------|--------|-------|------|--------------|-------|
+| — | — | — | — | — | Add first limb here |
+
+## Message / bus rates (targets)
+
+| Loop | Rate | Owner |
+|------|------|-------|
+| Current / FOC | 10–20 kHz | MCU |
+| Joint torque / impedance | 1–2 kHz | MCU |
+| State estimation | 100–500 Hz | mid compute |
+| Behavior / planning | ≤50 Hz | mid / high compute |
