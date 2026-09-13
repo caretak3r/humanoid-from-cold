@@ -1,6 +1,6 @@
 # Humanoid from Cold
 
-Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, and paired physical/digital interfaces.
+Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, and paired physical/digital interfaces.
 
 **Docs site (Nextra):** https://silent.engineer/humanoid-from-cold/
 
@@ -33,3 +33,4 @@ npm run build
 | `content/frames.mdx` | Frames & units contract |
 | `content/lessons/day-01-cold-start.mdx` | Cold-start framing |
 | `content/lessons/day-02-joint-foc.mdx` | Joint FOC & current as muscle |
+| `content/lessons/day-03-sensing-beyond-joint.mdx` | IMU, contact/force, estimation rates |

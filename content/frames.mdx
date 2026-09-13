@@ -10,11 +10,13 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Base / pelvis frame | TBD |
 | Joint axis sense | Right-hand rule; positive = TBD |
 | Encoder zero | Mechanical stop / mid-range / calibrated home — TBD per joint |
+| IMU mount link / extrinsic | TBD (Day 03); units $m/s^2$, $rad/s$ |
+| Contact frames (feet/hands) | TBD (Day 03); wrench N, N·m |
 | Lengths | meters |
 | Angles | radians in software; degrees only in human docs |
 | Mass / inertia | kg, kg·m² about link CoM |
 | Torque / force | N·m, N |
-| Time | seconds; loop rates in Hz |
+| Time | seconds; loop rates in Hz; declare bus timebase |
 
 ## Named links & joints
 
@@ -28,5 +30,7 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 |------|------|-------|
 | Current / FOC | 10–20 kHz | MCU |
 | Joint torque / impedance | 1–2 kHz | MCU |
+| Contact / FT sample | 0.5–2 kHz | MCU |
+| IMU raw | 200–1000 Hz | MCU |
 | State estimation | 100–500 Hz | mid compute |
 | Behavior / planning | ≤50 Hz | mid / high compute |
