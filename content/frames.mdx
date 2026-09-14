@@ -34,3 +34,14 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | IMU raw | 200–1000 Hz | MCU |
 | State estimation | 100–500 Hz | mid compute |
 | Behavior / planning | ≤50 Hz | mid / high compute |
+
+## Clock domain & bus (Day 04)
+
+| Item | Decision |
+|------|----------|
+| Spine | TBD (CAN-FD / EtherCAT / hybrid) |
+| Time master / `clock_domain` name | TBD (e.g. `ec_dc`, `host_mono`) |
+| Cycle time $T_c$ | TBD |
+| Node ID map | TBD (link from bus config) |
+| `age_budget_ms` by message class | TBD — JointState / ImuSample / ContactState |
+| Sync mechanism | TBD (DC / heartbeat / host-stamp early only) |
