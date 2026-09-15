@@ -17,6 +17,7 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Mass / inertia | kg, kg·m² about link CoM |
 | Torque / force | N·m, N |
 | Time | seconds; loop rates in Hz; declare bus timebase |
+| Voltage / current | V, A on named rails; publish bus and logic domains separately |
 
 ## Named links & joints
 
@@ -34,6 +35,7 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | IMU raw | 200–1000 Hz | MCU |
 | State estimation | 100–500 Hz | mid compute |
 | Behavior / planning | ≤50 Hz | mid / high compute |
+| Power / BMS publish | 10–100 Hz (faster under fault) | BMS / mid MCU |
 
 ## Clock domain & bus (Day 04)
 
@@ -43,5 +45,16 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Time master / `clock_domain` name | TBD (e.g. `ec_dc`, `host_mono`) |
 | Cycle time $T_c$ | TBD |
 | Node ID map | TBD (link from bus config) |
-| `age_budget_ms` by message class | TBD — JointState / ImuSample / ContactState |
+| `age_budget_ms` by message class | TBD — JointState / ImuSample / ContactState / PowerState |
 | Sync mechanism | TBD (DC / heartbeat / host-stamp early only) |
+
+## Power domain & voltage (Day 05)
+
+| Item | Decision |
+|------|----------|
+| Pack nominal / series count | TBD |
+| High-power DC bus rail | TBD (e.g. pack-direct ~48 V class) |
+| Logic / sensor rails | TBD (e.g. isolated 5 V / 3.3 V) |
+| Soft-sag / soft-UV / UVLO thresholds | TBD — label measured vs illustrative |
+| `torque_scale` / `max_iq_abs` consumer | Day 02 joint command path |
+| STO / safe-torque-cut owner | TBD (hardware gate-power kill) |
