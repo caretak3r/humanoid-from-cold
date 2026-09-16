@@ -45,7 +45,7 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Time master / `clock_domain` name | TBD (e.g. `ec_dc`, `host_mono`) |
 | Cycle time $T_c$ | TBD |
 | Node ID map | TBD (link from bus config) |
-| `age_budget_ms` by message class | TBD — JointState / ImuSample / ContactState / PowerState |
+| `age_budget_ms` by message class | TBD — JointState / ImuSample / ContactState / PowerState / EstimatorState |
 | Sync mechanism | TBD (DC / heartbeat / host-stamp early only) |
 
 ## Power domain & voltage (Day 05)
@@ -58,3 +58,14 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Soft-sag / soft-UV / UVLO thresholds | TBD — label measured vs illustrative |
 | `torque_scale` / `max_iq_abs` consumer | Day 02 joint command path |
 | STO / safe-torque-cut owner | TBD (hardware gate-power kill) |
+
+## Estimation & contact modes (Day 06)
+
+| Item | Decision |
+|------|----------|
+| Estimator owner / output rate | TBD (target 100–500 Hz; one writer of `EstimatorState`) |
+| Process model class | TBD (EKF / complementary / hybrid) |
+| Stale policy | TBD — hold last + `stale` vs process-model propagate |
+| Contact mode list | TBD (e.g. FLIGHT / SS / DS) and how `contact_set` is derived |
+| Power-aware residual rule | TBD — downweight / gate on `torque_scale` or `PowerFault` |
+| Twin delay / dropout / sag hooks | TBD — must match hardware `age_budget_ms` and Day 05 derate |
