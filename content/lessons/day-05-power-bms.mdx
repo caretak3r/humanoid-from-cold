@@ -72,7 +72,7 @@ A BMS that only opens a contactor is a fuse with a microcontroller. Useful human
 flowchart TD
   Sense[Sense V_bus / I_pack / T / cells] --> Class{Classify}
   Class -->|OK with margin| Full[torque_scale = 1.0]
-  Class -->|Soft sag / warm / low SOC| Derate[Derate: torque_scale &lt; 1<br/>or max |iq| limit]
+  Class -->|Soft sag / warm / low SOC| Derate["Derate: torque_scale less than 1<br/>or max abs iq limit"]
   Class -->|Brownout approaching| SoftCut[Soft policy: hold / kneel<br/>+ publish PowerFault]
   Class -->|UVLO / OC / OT hard| STO[Hardware STO<br/>gate power removed]
   Full --> Drivers[Joint drivers]
