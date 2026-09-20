@@ -1,6 +1,6 @@
 # Humanoid from Cold
 
-Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, bus & time sync, power domain & BMS, contact-rich estimation, whole-body balance control, stepping & locomotion, push recovery & disturbance rejection, and paired physical/digital interfaces.
+Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, bus & time sync, power domain & BMS, contact-rich estimation, whole-body balance control, stepping & locomotion, push recovery & disturbance rejection, upper-body manipulation on shared balance ceilings, and paired physical/digital interfaces.
 
 **Docs site (Nextra):** https://silent.engineer/humanoid-from-cold/
 
@@ -40,3 +40,4 @@ npm run build
 | `content/lessons/day-07-wbc-balance.mdx` | WBC & contact-rich balance policies |
 | `content/lessons/day-08-stepping-locomotion.mdx` | Stepping & locomotion on WBC ceilings |
 | `content/lessons/day-09-push-recovery.mdx` | Push recovery & disturbance rejection |
+| `content/lessons/day-10-upper-body-manipulation.mdx` | Upper-body / manipulation on shared ceilings |
