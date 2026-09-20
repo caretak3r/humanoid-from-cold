@@ -69,3 +69,14 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Contact mode list | TBD (e.g. FLIGHT / SS / DS) and how `contact_set` is derived |
 | Power-aware residual rule | TBD — downweight / gate on `torque_scale` or `PowerFault` |
 | Twin delay / dropout / sag hooks | TBD — must match hardware `age_budget_ms` and Day 05 derate |
+
+## Upper-body / EE frames (Day 10)
+
+| Item | Decision |
+|------|----------|
+| EE / wrist frames (L/R) | TBD — named links aligned with `EstimatorState` |
+| Hand / grasp frames | TBD — aperture units; wrench N, N·m if instrumented |
+| `ManipulationCommand` owner / rate | TBD (mid-rate; one writer of manip intent) |
+| Hand role tags | FREE / CLAIM_SUPPORT / MEASURED_SUPPORT — measured `contact_set` owns truth |
+| Mid-reach abort signals | stale / `POWER_GATED` / low `torque_scale` → abort/soften EE tasks |
+| Twin reach / sag hooks | TBD — matched arm-load peaks and contact delay as hardware |

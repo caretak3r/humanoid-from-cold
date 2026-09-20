@@ -7,5 +7,6 @@ export default {
   'day-06-estimation-balance': 'Day 06 — Estimation & balance',
   'day-07-wbc-balance': 'Day 07 — WBC & balance',
   'day-08-stepping-locomotion': 'Day 08 — Stepping & locomotion',
-  'day-09-push-recovery': 'Day 09 — Push recovery'
+  'day-09-push-recovery': 'Day 09 — Push recovery',
+  'day-10-upper-body-manipulation': 'Day 10 — Upper-body manipulation'
 }
