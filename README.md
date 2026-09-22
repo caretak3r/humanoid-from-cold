@@ -1,6 +1,6 @@
 # Humanoid from Cold
 
-Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, bus & time sync, power domain & BMS, contact-rich estimation, whole-body balance control, stepping & locomotion, push recovery & disturbance rejection, upper-body manipulation on shared balance ceilings, hand-as-support / loco-manipulation on the same ceilings, and paired physical/digital interfaces.
+Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, bus & time sync, power domain & BMS, contact-rich estimation, whole-body balance control, stepping & locomotion, push recovery & disturbance rejection, upper-body manipulation on shared balance ceilings, hand-as-support / loco-manipulation on the same ceilings, multi-contact transitions / object-as-support / loco-manip scheduling, and paired physical/digital interfaces.
 
 **Docs site (Nextra):** https://silent.engineer/humanoid-from-cold/
 
@@ -42,3 +42,4 @@ npm run build
 | `content/lessons/day-09-push-recovery.mdx` | Push recovery & disturbance rejection |
 | `content/lessons/day-10-upper-body-manipulation.mdx` | Upper-body / manipulation on shared ceilings |
 | `content/lessons/day-11-hand-support-loco-manipulation.mdx` | Hand-as-support / loco-manipulation on shared ceilings |
+| `content/lessons/day-12-multicontact-transitions.mdx` | Multi-contact transitions / object-as-support / loco-manip scheduling |
