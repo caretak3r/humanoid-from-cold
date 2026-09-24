@@ -11,5 +11,6 @@ export default {
   'day-10-upper-body-manipulation': 'Day 10 — Upper-body manipulation',
   'day-11-hand-support-loco-manipulation': 'Day 11 — Hand-as-support / loco-manipulation',
   'day-12-multicontact-transitions': 'Day 12 — Multi-contact transitions / object-as-support',
-  'day-13-support-affordances': 'Day 13 — Perception-driven support affordances'
+  'day-13-support-affordances': 'Day 13 — Perception-driven support affordances',
+  'day-14-learned-residuals-scene-graphs': 'Day 14 — Learned residuals / scene graphs'
 }
