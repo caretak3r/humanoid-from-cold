@@ -338,7 +338,7 @@ flowchart TD
 3. **Single live gated residual/scene CLAIM** — one known surface or fixed object; scene graph + residual rank propose → gate → CLAIM → wait for MEASURED → PROMOTE → HOLD → DEMOTE; feet remain primary; confirm QP feasible; confirm `residual_hint` stays soft.
 4. **Learned honesty injects** — residual bias, scene-graph false edges / missing nodes, inference delay / dropout, residual-vs-MEASURE disagreement, `POWER_GATED` mid-CLAIM in twin **and** on hardware; confirm drop / wait / demote, not heroic promote-on-score.
 5. **Non-fight + mid-residual / mid-graph faults** — force residual-CLAIM-during-swing, recovery-during-HOLD, stale / gated / flicker / graph inconsistency / residual disagreement; confirm yield / abort / demote.
-6. **Then** add free residual / scene-driven schedules that choose ranking / soft refs above the QP — never replace cones, FOC, `torque_scale`, gait, recovery, or measured `ContactState`. Closed-loop learned policies under measured ceilings and sim-to-real residual validation wait for Day 15+.
+6. **Then** add free residual / scene-driven schedules that choose ranking / soft refs above the QP — never replace cones, FOC, `torque_scale`, gait, recovery, or measured `ContactState`. Closed-loop learned policies under measured ceilings and sim-to-real residual validation continue in [Day 15](/lessons/day-15-closed-loop-learned-policies).
 
 Skip to “end-to-end learned multi-contact in sim” and hardware’s first residual-ranked rail grasp becomes an unplanned tip / brownout experiment with better TensorBoard.
 
@@ -382,4 +382,4 @@ The lesson is not “drop a bigger net on the robot until the reward looks busy.
 
 ## Next
 
-**Day 15+** — Closed-loop learned policies under measured ceilings / sim-to-real residual validation: policies that act only through soft refs and schedule candidates above the same measured hard set — still no learned-plant-as-constraint-truth; twin must keep residual bias / false edges / delay / disagreement / sag honesty before free closed-loop learned multi-contact.
+**[Day 15](/lessons/day-15-closed-loop-learned-policies)** — Closed-loop learned policies under measured ceilings / sim-to-real residual validation: policies that act only through soft refs and schedule candidates above the same measured hard set — still no learned-plant-as-constraint-truth; twin must keep residual bias / false edges / delay / disagreement / sag honesty + sim-to-real residual validation before free closed-loop learned multi-contact.
