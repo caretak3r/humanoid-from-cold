@@ -1,6 +1,6 @@
 # Humanoid from Cold
 
-Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, bus & time sync, power domain & BMS, contact-rich estimation, whole-body balance control, stepping & locomotion, push recovery & disturbance rejection, upper-body manipulation on shared balance ceilings, hand-as-support / loco-manipulation on the same ceilings, multi-contact transitions / object-as-support / loco-manip scheduling, perception-driven support affordances / contact discovery feeding schedules, learned residuals / richer scene graphs on the affordance→schedule stack, closed-loop learned policies under measured ceilings / sim-to-real residual validation, and paired physical/digital interfaces.
+Learning notes for building a humanoid from cold start — multi-rate cyber-physical framing, frames/units contracts, joint FOC, body/contact sensing, bus & time sync, power domain & BMS, contact-rich estimation, whole-body balance control, stepping & locomotion, push recovery & disturbance rejection, upper-body manipulation on shared balance ceilings, hand-as-support / loco-manipulation on the same ceilings, multi-contact transitions / object-as-support / loco-manip scheduling, perception-driven support affordances / contact discovery feeding schedules, learned residuals / richer scene graphs on the affordance→schedule stack, closed-loop learned policies under measured ceilings / sim-to-real residual validation, teleop / shared-autonomy arbitration under the same measured ceilings, and paired physical/digital interfaces.
 
 **Docs site (Nextra):** https://silent.engineer/humanoid-from-cold/
 
@@ -46,3 +46,4 @@ npm run build
 | `content/lessons/day-13-support-affordances.mdx` | Perception-driven support affordances / contact discovery feeding schedules |
 | `content/lessons/day-14-learned-residuals-scene-graphs.mdx` | Learned residuals / richer scene graphs on the affordance→schedule stack |
 | `content/lessons/day-15-closed-loop-learned-policies.mdx` | Closed-loop learned policies under measured ceilings / sim-to-real residual validation |
+| `content/lessons/day-16-teleop-shared-autonomy.mdx` | Teleop / shared-autonomy arbitration under the same measured ceilings |

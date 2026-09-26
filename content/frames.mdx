@@ -80,3 +80,20 @@ Freeze this **before** CAD, firmware zeroing, or sim. Everything downstream trus
 | Hand role tags | FREE / CLAIM_SUPPORT / MEASURED_SUPPORT — measured `contact_set` owns truth |
 | Mid-reach abort signals | stale / `POWER_GATED` / low `torque_scale` → abort/soften EE tasks |
 | Twin reach / sag hooks | TBD — matched arm-load peaks and contact delay as hardware |
+
+## Soft learned / teleop / arbiter contracts (Days 14–16)
+
+Soft writers only. Measured `ContactState` still owns hard support membership into one WBC/QP. `never_hard` binds residual, scene, policy, teleop, and arbiter alike. Mid / host rate with `age_ms` — never µs / EtherCAT cyclic until jitter is measured.
+
+| Item | Decision |
+|------|----------|
+| `LearnedResidual` / `ResidualCorrection` owner / rate | TBD (Day 14) — soft additive on estimate features / soft task refs / AffordanceProposal ranking only |
+| `SoftSceneGraph` / Object / Support / Relation nodes | TBD (Day 14) — enrich AffordanceProposal CLAIM candidates only |
+| `LearnedPolicy` / `PolicyAction` / `PolicyCommand` owner / rate | TBD (Day 15) — mid / host; soft refs / AffordanceProposal ranking / CLAIM admit only; `closed_loop: true`; `never_hard: true` |
+| `SimToRealGate` status / checks | TBD (Day 15–16) — RED/YELLOW/GREEN; block free closed-loop / shared autonomy until GREEN |
+| `TeleopCommand` / `OperatorIntent` source / rate | TBD (Day 16) — STICK / VR / EE_DELTA / BUTTON; mid / host; soft refs / CLAIM admit only; `never_hard: true` |
+| `SharedAutonomyArbiter` modes | TELEOP_ONLY \| POLICY_ONLY \| BLEND / SHARED \| OPERATOR_OVERRIDE \| ABORT — **all still soft**; OVERRIDE ≠ hard ownership / MEASURE skip |
+| Soft vs hard ownership | Teleop / policy / arbiter / residual / scene / affordance = soft; measured FOOT\|HAND\|OBJECT = hard cones + $F_z \ge 0$; one WBC/QP; yield to Day 08 gait / Day 09 recovery / Day 05 power |
+| Mid-arbitration abort signals | stale / `POWER_GATED` / flicker / residual disagree / operator dropout / reward-hack / SimToReal fail → abort/demote |
+| Twin mid-arbitration hooks | teleop vs policy vs MEASURE vs gait vs recovery fights; operator latency/dropout; false CLAIM from intent; reward-hack to hard write — must match hardware |
+| Rate / jitter rule | No neural net **or** human stick path inside µs / EtherCAT cyclic until jitter measured |

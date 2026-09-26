@@ -374,7 +374,7 @@ flowchart TD
 3. **Single live gated closed-loop tick** — one known surface or fixed object; policy observes live state → soft action → gate → CLAIM → wait for MEASURED → PROMOTE → HOLD → DEMOTE; feet remain primary; confirm QP feasible; confirm `policy_hint` stays soft.
 4. **Sim-to-real residual validation** — twin injects action bias, reward hacking into hard writes, latency / dropout, domain shift, false CLAIM success in sim, plus Day 14 residual bias / false edges / MEASURE disagreement / `POWER_GATED` mid-CLAIM; confirm drop / wait / demote / API reject; `SimToRealGate` must go GREEN before free hardware path.
 5. **Non-fight + mid-policy faults** — force policy-CLAIM-during-swing, recovery-during-HOLD, stale / gated / flicker / residual disagreement / reward-hack attempt; confirm yield / abort / demote / reject.
-6. **Then** add free closed-loop learned multi-contact that chooses ranking / soft refs above the QP — never replace cones, FOC, `torque_scale`, gait, recovery, or measured `ContactState`. Teleop / shared-autonomy arbitration under the same ceilings waits for Day 16+.
+6. **Then** add free closed-loop learned multi-contact that chooses ranking / soft refs above the QP — never replace cones, FOC, `torque_scale`, gait, recovery, or measured `ContactState`. Teleop / shared-autonomy arbitration under the same ceilings continues in [Day 16](/lessons/day-16-teleop-shared-autonomy).
 
 Skip to “end-to-end closed-loop learned multi-contact in sim” and hardware’s first policy-ranked rail grasp becomes an unplanned tip / brownout experiment with better WandB charts.
 
@@ -419,4 +419,4 @@ The lesson is not “drop a bigger policy on the robot until the eval reward loo
 
 ## Next
 
-**Day 16+** — Teleop / shared-autonomy arbitration under the same measured ceilings: human teleop and learned policy as co-equal soft writers into refs / CLAIM admit — still no human-or-policy-as-constraint-truth; arbiter yields to gait / recovery / power; twin must keep mid-arbitration abort and sim-to-real honesty before free shared-autonomy multi-contact.
+**[Day 16](/lessons/day-16-teleop-shared-autonomy)** — Teleop / shared-autonomy arbitration under the same measured ceilings: human teleop and learned policy as co-equal soft writers into refs / CLAIM admit — still no human-or-policy-as-constraint-truth; arbiter yields to gait / recovery / power; twin must keep mid-arbitration abort and sim-to-real honesty before free shared-autonomy multi-contact.
