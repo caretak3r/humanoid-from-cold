@@ -14,5 +14,6 @@ export default {
   'day-13-support-affordances': 'Day 13 — Perception-driven support affordances',
   'day-14-learned-residuals-scene-graphs': 'Day 14 — Learned residuals / scene graphs',
   'day-15-closed-loop-learned-policies': 'Day 15 — Closed-loop learned policies',
-  'day-16-teleop-shared-autonomy': 'Day 16 — Teleop / shared-autonomy arbitration'
+  'day-16-teleop-shared-autonomy': 'Day 16 — Teleop / shared-autonomy arbitration',
+  'day-17-runtime-safety-supervisor': 'Day 17 — Runtime safety supervisor / kill-chain'
 }
