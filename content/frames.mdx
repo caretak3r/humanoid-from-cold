@@ -97,3 +97,19 @@ Soft writers only. Measured `ContactState` still owns hard support membership in
 | Mid-arbitration abort signals | stale / `POWER_GATED` / flicker / residual disagree / operator dropout / reward-hack / SimToReal fail → abort/demote |
 | Twin mid-arbitration hooks | teleop vs policy vs MEASURE vs gait vs recovery fights; operator latency/dropout; false CLAIM from intent; reward-hack to hard write — must match hardware |
 | Rate / jitter rule | No neural net **or** human stick path inside µs / EtherCAT cyclic until jitter measured |
+
+## Runtime safety supervisor (Day 17) + logging / replay / hygiene (Day 18)
+
+Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measured vs power vs stage without promoting scores to MEASURED. Replay is soft-only. Hygiene quarantines dishonest episodes and keeps late-kill / demote / ESTOP as negatives.
+
+| Item | Decision |
+|------|----------|
+| `RuntimeSafetySupervisor` stage / monitors | TBD (Day 17) — GREEN \| WARN \| INHIBIT_SOFT \| DEMOTE_CONTACTS \| TORQUE_SCALE_CLAMP \| ESTOP; mid / host; soft intents `never_hard`; hard kill via Day 05 only |
+| Kill-chain hard ownership | Day 05 BMS / `torque_scale` / FOC / physical+digital ESTOP — supervisor requests, never dual-writes |
+| `OPERATOR_OVERRIDE` vs kill-chain | OVERRIDE still soft; cannot bypass BMS / gait / recovery / hard stages (live or replay) |
+| `EpisodeLogger` schema / labels | TBD (Day 18) — LABEL_SOFT_INTENT \| LABEL_SUPERVISOR_STAGE \| LABEL_MEASURED_CONTACT \| LABEL_POWER \| LABEL_ESTIMATE \| LABEL_GATE \| LABEL_NEGATIVE_KILL; preserve age_ms / stage / gate / POWER_GATED / residual disagree |
+| `ReplayHarness` mode | SOFT_ONLY — feeds teleop / policy / arbiter only; forbid cones / JointCommand-as-measured / dual-write torque_scale / ContactState writes |
+| `DatasetHygiene` decisions | ADMIT \| QUARANTINE \| KEEP_NEGATIVE — quarantine reward-hack / OVERRIDE fight / missed POWER / promote-w/o-measure / dual-write / false-green / soft→MEASURED / stripped honesty; keep late-kill / demote / ESTOP |
+| Soft vs MEASURED on export | Teleop score / policy reward / blend / supervisor stage ≠ MEASURED; strip_honesty refused on free-export path |
+| Twin logging/replay races | Stale age stripped; WARN relabeled MEASURED; replay writing cones; clock skew dropping stage; OVERRIDE-as-GT; pretty-bag cleaning — SimToRealGate blocks free harvest until GREEN |
+| Rate / jitter rule | Logger / replay / hygiene mid / host only — no µs / EtherCAT cyclic until jitter measured; no nets reconstructing cones in µs loops |
