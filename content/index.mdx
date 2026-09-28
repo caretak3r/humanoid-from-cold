@@ -1,6 +1,6 @@
 # Humanoid from Cold
 
-Learning notes for building a humanoid **from cold start**: freeze frames and units, instrument one joint end-to-end, then chain contact, balance, and stepping. Physical build and digital twin share the same interfaces.
+Learning notes for building a humanoid **from cold start**: freeze frames and units, instrument one joint end-to-end, then chain contact, balance, stepping, shared autonomy, runtime safety, and teleop+policy logging / replay / dataset hygiene. Physical build and digital twin share the same interfaces.
 
 **Live site:** [silent.engineer/humanoid-from-cold](https://silent.engineer/humanoid-from-cold/)
 
@@ -25,6 +25,7 @@ Learning notes for building a humanoid **from cold start**: freeze frames and un
 - [Day 15 — Closed-loop learned policies](/lessons/day-15-closed-loop-learned-policies) — RL/imitation/behavior policies as soft refs and CLAIM candidates under measured ceilings; sim-to-real residual validation before free closed-loop
 - [Day 16 — Teleop / shared-autonomy arbitration](/lessons/day-16-teleop-shared-autonomy) — human teleop and learned policy as co-equal soft writers under SharedAutonomyArbiter; measured ContactState still owns the hard set; twin mid-arbitration fights before free shared autonomy
 - [Day 17 — Runtime safety supervisor / kill-chain](/lessons/day-17-runtime-safety-supervisor) — RuntimeSafetySupervisor above teleop/policy/arbiter; kill-chain WARN→INHIBIT_SOFT→DEMOTE_CONTACTS→TORQUE_SCALE_CLAMP→ESTOP; hard kill only via Day 05 BMS/torque_scale/FOC; twin supervisor races before free shared autonomy armed
+- [Day 18 — Teleop+policy logging / replay / dataset hygiene](/lessons/day-18-teleop-policy-logging-replay) — EpisodeLogger / ReplayHarness / DatasetHygiene under soft-vs-hard + supervisor-armed kill-chain; labels refuse soft→MEASURED; replay soft-only with age/stage/gate honesty; twin logging/replay races before free dataset harvest
 
 ## Principle
 

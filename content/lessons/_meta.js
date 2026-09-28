@@ -15,5 +15,6 @@ export default {
   'day-14-learned-residuals-scene-graphs': 'Day 14 — Learned residuals / scene graphs',
   'day-15-closed-loop-learned-policies': 'Day 15 — Closed-loop learned policies',
   'day-16-teleop-shared-autonomy': 'Day 16 — Teleop / shared-autonomy arbitration',
-  'day-17-runtime-safety-supervisor': 'Day 17 — Runtime safety supervisor / kill-chain'
+  'day-17-runtime-safety-supervisor': 'Day 17 — Runtime safety supervisor / kill-chain',
+  'day-18-teleop-policy-logging-replay': 'Day 18 — Teleop+policy logging / replay / dataset hygiene'
 }
