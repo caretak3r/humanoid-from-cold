@@ -98,9 +98,9 @@ Soft writers only. Measured `ContactState` still owns hard support membership in
 | Twin mid-arbitration hooks | teleop vs policy vs MEASURE vs gait vs recovery fights; operator latency/dropout; false CLAIM from intent; reward-hack to hard write — must match hardware |
 | Rate / jitter rule | No neural net **or** human stick path inside µs / EtherCAT cyclic until jitter measured |
 
-## Runtime safety supervisor (Day 17) + logging / replay / hygiene (Day 18)
+## Runtime safety supervisor (Day 17) + logging / replay / hygiene (Day 18) + offline / shadow / canary (Day 19)
 
-Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measured vs power vs stage without promoting scores to MEASURED. Replay is soft-only. Hygiene quarantines dishonest episodes and keeps late-kill / demote / ESTOP as negatives.
+Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measured vs power vs stage without promoting scores to MEASURED. Replay is soft-only. Hygiene quarantines dishonest episodes and keeps late-kill / demote / ESTOP as negatives. Offline eval / shadow / canary score and admit under the same gates — still soft; MEASURE and Day 05 still bind.
 
 | Item | Decision |
 |------|----------|
@@ -113,3 +113,9 @@ Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measu
 | Soft vs MEASURED on export | Teleop score / policy reward / blend / supervisor stage ≠ MEASURED; strip_honesty refused on free-export path |
 | Twin logging/replay races | Stale age stripped; WARN relabeled MEASURED; replay writing cones; clock skew dropping stage; OVERRIDE-as-GT; pretty-bag cleaning — SimToRealGate blocks free harvest until GREEN |
 | Rate / jitter rule | Logger / replay / hygiene mid / host only — no µs / EtherCAT cyclic until jitter measured; no nets reconstructing cones in µs loops |
+| `OfflineEvaluator` metrics | TBD (Day 19) — soft metrics on SOFT_INTENT only; measured on MEASURED only; supervisor-aware negatives; age_ms / SimToRealGate / POWER_GATED / residual honesty; refuse green on reward alone |
+| `ShadowRunner` mode | OBSERVE_ONLY — ShadowAction / ShadowScore; forbid JointCommand / cones / dual-write torque_scale / clear stage; first-class dropout / live disagree / residual / stage↑ |
+| `CanaryDeployer` admit | POLICY_ONLY \| BLEND (small α) only when OfflineEvaluator + DatasetHygiene + RuntimeSafetySupervisor + SimToRealGate green; still soft; MEASURE before PROMOTE; abort/rollback on escalate / stale / POWER_GATED / gate fail / residual / hygiene spike |
+| OVERRIDE vs canary | OVERRIDE still soft; cannot force canary past Day 05 hard path / BMS / gait / recovery |
+| Twin eval/shadow/canary races | False-green offline; shadow hard-write; canary skips MEASURE; dual-write torque_scale; OVERRIDE-as-bypass; clock skew in canary window; reward-hacked bags green offline — SimToRealGate blocks free canary until GREEN |
+| Rate / jitter rule (Day 19) | Offline / shadow / canary mid / host only — no µs / EtherCAT cyclic until jitter measured; no nets in µs loops |
