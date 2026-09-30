@@ -17,5 +17,6 @@ export default {
   'day-16-teleop-shared-autonomy': 'Day 16 — Teleop / shared-autonomy arbitration',
   'day-17-runtime-safety-supervisor': 'Day 17 — Runtime safety supervisor / kill-chain',
   'day-18-teleop-policy-logging-replay': 'Day 18 — Teleop+policy logging / replay / dataset hygiene',
-  'day-19-offline-eval-shadow-canary': 'Day 19 — Offline eval / shadow mode / canary under supervisor + logging gates'
+  'day-19-offline-eval-shadow-canary': 'Day 19 — Offline eval / shadow mode / canary under supervisor + logging gates',
+  'day-20-hil-regression-farm': 'Day 20 — HIL regression farm under supervisor + logging + canary gates'
 }

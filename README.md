@@ -50,3 +50,4 @@ npm run build
 | `content/lessons/day-17-runtime-safety-supervisor.mdx` | Runtime safety supervisor / monitors / kill-chain for shared autonomy |
 | `content/lessons/day-18-teleop-policy-logging-replay.mdx` | Teleop+policy logging / replay / dataset hygiene under soft-vs-hard + supervisor kill-chain |
 | `content/lessons/day-19-offline-eval-shadow-canary.mdx` | Offline eval / shadow mode / canary under supervisor + logging gates |
+| `content/lessons/day-20-hil-regression-farm.mdx` | HIL regression farm under supervisor + logging + canary gates |

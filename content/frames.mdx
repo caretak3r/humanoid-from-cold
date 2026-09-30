@@ -98,9 +98,9 @@ Soft writers only. Measured `ContactState` still owns hard support membership in
 | Twin mid-arbitration hooks | teleop vs policy vs MEASURE vs gait vs recovery fights; operator latency/dropout; false CLAIM from intent; reward-hack to hard write — must match hardware |
 | Rate / jitter rule | No neural net **or** human stick path inside µs / EtherCAT cyclic until jitter measured |
 
-## Runtime safety supervisor (Day 17) + logging / replay / hygiene (Day 18) + offline / shadow / canary (Day 19)
+## Runtime safety supervisor (Day 17) + logging / replay / hygiene (Day 18) + offline / shadow / canary (Day 19) + HIL regression farm (Day 20)
 
-Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measured vs power vs stage without promoting scores to MEASURED. Replay is soft-only. Hygiene quarantines dishonest episodes and keeps late-kill / demote / ESTOP as negatives. Offline eval / shadow / canary score and admit under the same gates — still soft; MEASURE and Day 05 still bind.
+Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measured vs power vs stage without promoting scores to MEASURED. Replay is soft-only. Hygiene quarantines dishonest episodes and keeps late-kill / demote / ESTOP as negatives. Offline eval / shadow / canary score and admit under the same gates — still soft; MEASURE and Day 05 still bind. HIL farm schedules twin+bench suites that re-score / re-run / dry-run those paths; RegressionGate fails closed on canary admit when races or hygiene regress — still soft; never a farm plant.
 
 | Item | Decision |
 |------|----------|
@@ -119,3 +119,9 @@ Supervisor sits above soft teleop / policy / arbiter. Logging tags soft vs measu
 | OVERRIDE vs canary | OVERRIDE still soft; cannot force canary past Day 05 hard path / BMS / gait / recovery |
 | Twin eval/shadow/canary races | False-green offline; shadow hard-write; canary skips MEASURE; dual-write torque_scale; OVERRIDE-as-bypass; clock skew in canary window; reward-hacked bags green offline — SimToRealGate blocks free canary until GREEN |
 | Rate / jitter rule (Day 19) | Offline / shadow / canary mid / host only — no µs / EtherCAT cyclic until jitter measured; no nets in µs loops |
+| `HilFarm` schedule | TBD (Day 20) — continuous twin+bench host; same schema phys↔twin; mid/host; never second plant; forbid JointCommand / cones / dual-write torque_scale / clear stage / skip-MEASURE; require ESTOP pairing |
+| `HilSuite` scenarios | BAG_REPLAY \| RACE_INJECT \| OFFLINE_RESCORE \| SHADOW_OBSERVE \| CANARY_DRY_RUN — supervisor-aware negatives / age_ms / POWER_GATED / gate / residual / hygiene spike required; refuse soft→MEASURED / strip honesty |
+| `RegressionGate` | Fail-closed soft-admit blocker — RED on suite regression / hygiene spike / false-green offline / shadow hard-write / measure-skip / dual-write / OVERRIDE-bypass / clock skew / unpaired ESTOP; never hard writes |
+| OVERRIDE vs farm | OVERRIDE still soft; cannot force farm green or canary past Day 05 hard path / BMS / gait / recovery |
+| Twin+bench farm races | Honesty-stripped suite green; replay without age/stage; dual-write for bench; OVERRIDE-as-bypass; skip MEASURE because suite busy; unpaired ESTOP; false-green Offline re-score; shadow hard-write under schedule; canary dry-run as free admit — SimToRealGate blocks continuous farm / free canary until GREEN |
+| Rate / jitter rule (Day 20) | Farm / suite / gate mid / host only — no µs / EtherCAT cyclic until jitter measured; no nets in µs loops |
