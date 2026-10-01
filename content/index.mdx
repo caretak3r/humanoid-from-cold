@@ -1,6 +1,6 @@
 # Humanoid from Cold
 
-Learning notes for building a humanoid **from cold start**: freeze frames and units, instrument one joint end-to-end, then chain contact, balance, stepping, shared autonomy, runtime safety, teleop+policy logging / replay / dataset hygiene, offline eval / shadow / canary under supervisor + logging gates, and HIL regression farm under supervisor + logging + canary gates. Physical build and digital twin share the same interfaces.
+Learning notes for building a humanoid **from cold start**: freeze frames and units, instrument one joint end-to-end, then chain contact, balance, stepping, shared autonomy, runtime safety, teleop+policy logging / replay / dataset hygiene, offline eval / shadow / canary under supervisor + logging gates, HIL regression farm under supervisor + logging + canary gates, and fleet multi-robot shared-autonomy logging / ticket-log sync / online continual learning under the same gates. Physical build and digital twin share the same interfaces.
 
 **Live site:** [silent.engineer/humanoid-from-cold](https://silent.engineer/humanoid-from-cold/)
 
@@ -28,6 +28,7 @@ Learning notes for building a humanoid **from cold start**: freeze frames and un
 - [Day 18 — Teleop+policy logging / replay / dataset hygiene](/lessons/day-18-teleop-policy-logging-replay) — EpisodeLogger / ReplayHarness / DatasetHygiene under soft-vs-hard + supervisor-armed kill-chain; labels refuse soft→MEASURED; replay soft-only with age/stage/gate honesty; twin logging/replay races before free dataset harvest
 - [Day 19 — Offline eval / shadow mode / canary under supervisor + logging gates](/lessons/day-19-offline-eval-shadow-canary) — OfflineEvaluator / ShadowRunner / CanaryDeployer; honest offline metrics on quarantined-clean bags; shadow observes beside live soft writers without hard writes; canary admits limited soft weight only when OfflineEvaluator + DatasetHygiene + RuntimeSafetySupervisor gates pass; twin eval/shadow/canary races before free canary
 - [Day 20 — Hardware-in-loop (HIL) regression farm under supervisor + logging + canary gates](/lessons/day-20-hil-regression-farm) — HilFarm / HilSuite / RegressionGate; continuous twin+bench suites replay Day 18 bags, re-score OfflineEvaluator, re-run ShadowRunner observe-only, dry-run CanaryDeployer; RegressionGate fails closed and blocks canary admit when races or hygiene regress; never a farm plant that bypasses MEASURE or Day 05 ceilings; twin+bench farm races before continuous farm
+- [Day 21 — Fleet multi-robot shared-autonomy logging / ticket-log sync / online continual learning](/lessons/day-21-fleet-continual-learning) — FleetLogHub / TicketLogSync / OnlineContinualLearner / FleetAdmitGate; multi-robot EpisodeLogger coordination with same schema; ticket↔bag soft metadata; gated online continual learning from hygiene ADMIT only; FleetAdmitGate fails closed on drift / ticket soft→MEASURED / quarantine-train / farm RED; never a fleet plant that bypasses MEASURE or Day 05 ceilings; twin+fleet races before free fleet online
 
 ## Principle
 
