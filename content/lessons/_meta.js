@@ -20,5 +20,6 @@ export default {
   'day-19-offline-eval-shadow-canary': 'Day 19 — Offline eval / shadow mode / canary under supervisor + logging gates',
   'day-20-hil-regression-farm': 'Day 20 — HIL regression farm under supervisor + logging + canary gates',
   'day-21-fleet-continual-learning': 'Day 21 — Fleet multi-robot logging / ticket-log sync / online continual learning',
-  'day-22-fleet-canary-orchestration': 'Day 22 — Fleet canary orchestration / multi-site sim-to-real ranking'
+  'day-22-fleet-canary-orchestration': 'Day 22 — Fleet canary orchestration / multi-site sim-to-real ranking',
+  'day-23-fleet-incident-response': 'Day 23 — Fleet incident response / coordinated rollback / multi-robot kill'
 }
