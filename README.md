@@ -55,3 +55,4 @@ npm run build
 | `content/lessons/day-22-fleet-canary-orchestration.mdx` | Fleet canary orchestration / multi-site sim-to-real ranking |
 | `content/lessons/day-23-fleet-incident-response.mdx` | Fleet incident response / coordinated rollback / multi-robot kill |
 | `content/lessons/day-24-post-incident-forensics.mdx` | Post-incident forensics / fleet postmortem bags / reopen canary |
+| `content/lessons/day-25-fleet-change-management.mdx` | Fleet change management / staged policy promotion / cross-site config honesty |
