@@ -57,3 +57,4 @@ npm run build
 | `content/lessons/day-24-post-incident-forensics.mdx` | Post-incident forensics / fleet postmortem bags / reopen canary |
 | `content/lessons/day-25-fleet-change-management.mdx` | Fleet change management / staged policy promotion / cross-site config honesty |
 | `content/lessons/day-26-actuator-wear-predictive-maintenance.mdx` | Actuator wear / calibration drift / predictive maintenance |
+| `content/lessons/day-27-thermal-budgets-duty-cycle.mdx` | Thermal budgets / duty-cycle scheduling |
