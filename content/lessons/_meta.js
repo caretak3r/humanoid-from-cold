@@ -26,6 +26,7 @@ export default {
   'day-25-fleet-change-management': 'Day 25 — Fleet change management / staged policy promotion / cross-site config honesty',
   'day-26-actuator-wear-predictive-maintenance': 'Day 26 — Actuator wear / calibration drift / predictive maintenance',
   'day-27-thermal-budgets-duty-cycle': 'Day 27 — Thermal budgets / duty-cycle scheduling',
-  'day-28-energy-budgets-mission-planning': 'Day 28 — Energy budgets / battery mission planning'
+  'day-28-energy-budgets-mission-planning': 'Day 28 — Energy budgets / battery mission planning',
+  'day-29-human-proximity-safety': 'Day 29 — Human-proximity safety / SSM + PFL'
 
 }
