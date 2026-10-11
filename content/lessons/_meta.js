@@ -28,6 +28,7 @@ export default {
   'day-27-thermal-budgets-duty-cycle': 'Day 27 — Thermal budgets / duty-cycle scheduling',
   'day-28-energy-budgets-mission-planning': 'Day 28 — Energy budgets / battery mission planning',
   'day-29-human-proximity-safety': 'Day 29 — Human-proximity safety / SSM + PFL',
-  'day-30-collaborative-workspace-zoning': 'Day 30 — Collaborative workspace zoning / safeguarded-space attestation'
+  'day-30-collaborative-workspace-zoning': 'Day 30 — Collaborative workspace zoning / safeguarded-space attestation',
+  'day-31-shared-control-teleop-arbitration': 'Day 31 — Shared-control / teleop arbitration under attested zones'
 
 }

@@ -39,6 +39,7 @@ Learning notes for building a humanoid **from cold start**: freeze frames and un
 
 - [Day 29 — Human-proximity safety / SSM + PFL](/lessons/day-29-human-proximity-safety) — ProximityStateEstimator / StoppingDistanceForecaster / ContactForceLimiter / HumanSafetyAdmissionGate; MEASURED separation vs ESTIMATED human motion (±σ); stopping-distance twin from Day 27 thermal + Day 28 power; SSM envelopes; HARD ISO/TS 15066-style body-region PFL ceilings; HumanSafetyAdmissionGate fails closed; Day 17 owns ESTOP; Day 05 owns torque_scale
 - [Day 30 — Collaborative workspace zoning / safeguarded-space attestation](/lessons/day-30-collaborative-workspace-zoning) — ZoneGeometryAttestor / SafeguardedSpaceMap / CrowdDensityEstimator vs MeasuredOccupancyCount / HandoffCorridorGate / CrossSiteZoneConfigGate / CollaborativeWorkspaceAdmissionGate; MEASURED attested zone geometry and occupancy; soft density forecast feeding Day 29 SSM; handoff under PFL; cross-site zone-config honesty (Day 25 pattern); soft never writes Day 17 / Day 05 / Day 25 HARD_SAFETY ChangeSets
+- [Day 31 — Shared-control / teleop arbitration under attested zones](/lessons/day-31-shared-control-teleop-arbitration) — ZoneAwareSharedControlArbiter / AuthorityTransferGate / OperatorIntentAdmissionGate / SharedControlAdmissionGate; Day 16 soft co-writing deepened under Day 30 CWAG + Day 29 SSM/PFL; zone- and proximity-aware authority transfer; gesture/intent soft-only (cannot raise PFL or bypass CrossSiteZoneConfigGate); soft never writes Day 17 ESTOP or Day 05 torque_scale
 
 ## Principle
 
