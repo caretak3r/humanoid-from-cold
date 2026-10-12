@@ -62,3 +62,4 @@ npm run build
 | `content/lessons/day-29-human-proximity-safety.mdx` | Human-proximity safety / SSM + PFL |
 | `content/lessons/day-30-collaborative-workspace-zoning.mdx` | Collaborative workspace zoning / safeguarded-space attestation |
 | `content/lessons/day-31-shared-control-teleop-arbitration.mdx` | Shared-control / teleop arbitration under attested zones |
+| `content/lessons/day-32-multi-operator-fleet-shared-control.mdx` | Multi-operator / fleet shared-control coordination |
