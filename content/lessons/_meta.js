@@ -30,6 +30,7 @@ export default {
   'day-29-human-proximity-safety': 'Day 29 — Human-proximity safety / SSM + PFL',
   'day-30-collaborative-workspace-zoning': 'Day 30 — Collaborative workspace zoning / safeguarded-space attestation',
   'day-31-shared-control-teleop-arbitration': 'Day 31 — Shared-control / teleop arbitration under attested zones',
-  'day-32-multi-operator-fleet-shared-control': 'Day 32 — Multi-operator / fleet shared-control coordination'
+  'day-32-multi-operator-fleet-shared-control': 'Day 32 — Multi-operator / fleet shared-control coordination',
+  'day-33-remote-multisite-teleop-latency': 'Day 33 — Remote / multi-site teleop under latency'
 
 }
