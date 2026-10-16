@@ -66,3 +66,4 @@ npm run build
 | `content/lessons/day-33-remote-multisite-teleop-latency.mdx` | Remote / multi-site teleop under latency |
 | `content/lessons/day-34-telepresence-haptic-force-honesty.mdx` | Immersive telepresence / haptic force-reflection honesty |
 | `content/lessons/day-35-dexterous-skill-capture-lfd.mdx` | Dexterous skill capture / learning from demonstration under honest labels |
+| `content/lessons/day-36-cross-embodiment-skill-transfer.mdx` | Cross-embodiment skill transfer / sim-to-real under honest contact labels |
