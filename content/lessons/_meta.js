@@ -34,6 +34,7 @@ export default {
   'day-33-remote-multisite-teleop-latency': 'Day 33 — Remote / multi-site teleop under latency',
   'day-34-telepresence-haptic-force-honesty': 'Day 34 — Immersive telepresence / haptic force-reflection honesty',
   'day-35-dexterous-skill-capture-lfd': 'Day 35 — Dexterous skill capture / learning from demonstration under honest labels',
-  'day-36-cross-embodiment-skill-transfer': 'Day 36 — Cross-embodiment skill transfer / sim-to-real under honest contact labels'
+  'day-36-cross-embodiment-skill-transfer': 'Day 36 — Cross-embodiment skill transfer / sim-to-real under honest contact labels',
+  'day-37-fleet-skill-library': 'Day 37 — Fleet skill library / multi-unit skill catalog under embodiment-honest admission'
 
 }
