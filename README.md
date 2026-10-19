@@ -69,3 +69,4 @@ npm run build
 | `content/lessons/day-36-cross-embodiment-skill-transfer.mdx` | Cross-embodiment skill transfer / sim-to-real under honest contact labels |
 | `content/lessons/day-37-fleet-skill-library.mdx` | Fleet skill library / multi-unit skill catalog under embodiment-honest admission |
 | `content/lessons/day-38-task-composition-catalog-skills.mdx` | Task composition over catalog skills under per-skill admission |
+| `content/lessons/day-39-multi-unit-cooperative-tasks.mdx` | Multi-unit cooperative tasks (unit-to-unit handoff, two-robot carry) under per-unit admission |
