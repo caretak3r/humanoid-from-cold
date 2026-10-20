@@ -37,6 +37,7 @@ export default {
   'day-36-cross-embodiment-skill-transfer': 'Day 36 — Cross-embodiment skill transfer / sim-to-real under honest contact labels',
   'day-37-fleet-skill-library': 'Day 37 — Fleet skill library / multi-unit skill catalog under embodiment-honest admission',
   'day-38-task-composition-catalog-skills': 'Day 38 — Task composition over catalog skills under per-skill admission',
-  'day-39-multi-unit-cooperative-tasks': 'Day 39 — Multi-unit cooperative tasks under per-unit admission'
+  'day-39-multi-unit-cooperative-tasks': 'Day 39 — Multi-unit cooperative tasks under per-unit admission',
+  'day-40-human-robot-handover-co-carry': 'Day 40 — Human–robot object handover and co-carry under PFL'
 
 }
