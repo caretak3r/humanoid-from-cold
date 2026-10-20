@@ -70,3 +70,4 @@ npm run build
 | `content/lessons/day-37-fleet-skill-library.mdx` | Fleet skill library / multi-unit skill catalog under embodiment-honest admission |
 | `content/lessons/day-38-task-composition-catalog-skills.mdx` | Task composition over catalog skills under per-skill admission |
 | `content/lessons/day-39-multi-unit-cooperative-tasks.mdx` | Multi-unit cooperative tasks (unit-to-unit handoff, two-robot carry) under per-unit admission |
+| `content/lessons/day-40-human-robot-handover-co-carry.mdx` | Human–robot object handover and co-carry under PFL (release on measured pull, robot as force-capped follower, walk-away invariant) |
