@@ -71,3 +71,4 @@ npm run build
 | `content/lessons/day-38-task-composition-catalog-skills.mdx` | Task composition over catalog skills under per-skill admission |
 | `content/lessons/day-39-multi-unit-cooperative-tasks.mdx` | Multi-unit cooperative tasks (unit-to-unit handoff, two-robot carry) under per-unit admission |
 | `content/lessons/day-40-human-robot-handover-co-carry.mdx` | Human–robot object handover and co-carry under PFL (release on measured pull, robot as force-capped follower, walk-away invariant) |
+| `content/lessons/day-41-whole-body-tactile-skin-touch.mdx` | Whole-body tactile skin and intentional touch vs collision (momentum residual owns reaction, honest skin coverage, handle-enabled lead-by-hand) |
