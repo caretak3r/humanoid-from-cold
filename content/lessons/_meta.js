@@ -39,6 +39,7 @@ export default {
   'day-38-task-composition-catalog-skills': 'Day 38 — Task composition over catalog skills under per-skill admission',
   'day-39-multi-unit-cooperative-tasks': 'Day 39 — Multi-unit cooperative tasks under per-unit admission',
   'day-40-human-robot-handover-co-carry': 'Day 40 — Human–robot object handover and co-carry under PFL',
-  'day-41-whole-body-tactile-skin-touch': 'Day 41 — Whole-body tactile skin and intentional touch vs collision'
+  'day-41-whole-body-tactile-skin-touch': 'Day 41 — Whole-body tactile skin and intentional touch vs collision',
+  'day-42-deliberate-whole-body-contact': 'Day 42 — Deliberate whole-body contact, environment contact, and self-collision'
 
 }
