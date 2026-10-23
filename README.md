@@ -73,3 +73,4 @@ npm run build
 | `content/lessons/day-40-human-robot-handover-co-carry.mdx` | Human–robot object handover and co-carry under PFL (release on measured pull, robot as force-capped follower, walk-away invariant) |
 | `content/lessons/day-41-whole-body-tactile-skin-touch.mdx` | Whole-body tactile skin and intentional touch vs collision (momentum residual owns reaction, honest skin coverage, handle-enabled lead-by-hand) |
 | `content/lessons/day-42-deliberate-whole-body-contact.mdx` | Deliberate whole-body contact, environment contact, and self-collision (subtract only measured in-band wrench at a confirmed site, hole sites need pads, out-of-band is a collision again) |
+| `content/lessons/day-43-falls-fall-safe-contact.mdx` | Falls and fall-safe contact (commit only on measured capture exhaustion, steer inside the feasible cone away from people, land on measured pads within regen and derate budgets, measure before getting up) |

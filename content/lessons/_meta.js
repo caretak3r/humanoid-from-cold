@@ -40,6 +40,7 @@ export default {
   'day-39-multi-unit-cooperative-tasks': 'Day 39 — Multi-unit cooperative tasks under per-unit admission',
   'day-40-human-robot-handover-co-carry': 'Day 40 — Human–robot object handover and co-carry under PFL',
   'day-41-whole-body-tactile-skin-touch': 'Day 41 — Whole-body tactile skin and intentional touch vs collision',
-  'day-42-deliberate-whole-body-contact': 'Day 42 — Deliberate whole-body contact, environment contact, and self-collision'
+  'day-42-deliberate-whole-body-contact': 'Day 42 — Deliberate whole-body contact, environment contact, and self-collision',
+  'day-43-falls-fall-safe-contact': 'Day 43 — Falls and fall-safe contact under the touch stack'
 
 }
