@@ -41,6 +41,7 @@ export default {
   'day-40-human-robot-handover-co-carry': 'Day 40 — Human–robot object handover and co-carry under PFL',
   'day-41-whole-body-tactile-skin-touch': 'Day 41 — Whole-body tactile skin and intentional touch vs collision',
   'day-42-deliberate-whole-body-contact': 'Day 42 — Deliberate whole-body contact, environment contact, and self-collision',
-  'day-43-falls-fall-safe-contact': 'Day 43 — Falls and fall-safe contact under the touch stack'
+  'day-43-falls-fall-safe-contact': 'Day 43 — Falls and fall-safe contact under the touch stack',
+  'day-44-stairs-ramps-uneven-terrain': 'Day 44 — Stairs, ramps, and uneven terrain under the fall-safe stack'
 
 }
