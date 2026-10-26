@@ -43,6 +43,7 @@ export default {
   'day-42-deliberate-whole-body-contact': 'Day 42 — Deliberate whole-body contact, environment contact, and self-collision',
   'day-43-falls-fall-safe-contact': 'Day 43 — Falls and fall-safe contact under the touch stack',
   'day-44-stairs-ramps-uneven-terrain': 'Day 44 — Stairs, ramps, and uneven terrain under the fall-safe stack',
-  'day-45-outdoor-deformable-ground': 'Day 45 — Outdoor and deformable ground under the terrain stack'
+  'day-45-outdoor-deformable-ground': 'Day 45 — Outdoor and deformable ground under the terrain stack',
+  'day-46-carrying-payloads-walking': 'Day 46 — Carrying payloads while walking under the outdoor and terrain stacks'
 
 }
