@@ -45,6 +45,7 @@ export default {
   'day-44-stairs-ramps-uneven-terrain': 'Day 44 — Stairs, ramps, and uneven terrain under the fall-safe stack',
   'day-45-outdoor-deformable-ground': 'Day 45 — Outdoor and deformable ground under the terrain stack',
   'day-46-carrying-payloads-walking': 'Day 46 — Carrying payloads while walking under the outdoor and terrain stacks',
-  'day-47-pushing-pulling-heavy-objects': 'Day 47 — Pushing, pulling, and moving heavy objects under the payload and outdoor stacks'
+  'day-47-pushing-pulling-heavy-objects': 'Day 47 — Pushing, pulling, and moving heavy objects under the payload and outdoor stacks',
+  'day-48-powered-hand-tools-process-forces': 'Day 48 — Powered hand tools and sustained process forces under the push/pull and payload stacks'
 
 }
