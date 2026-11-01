@@ -49,6 +49,7 @@ export default {
   'day-48-powered-hand-tools-process-forces': 'Day 48 — Powered hand tools and sustained process forces under the push/pull and payload stacks',
   'day-49-bimanual-tool-held-workpiece': 'Day 49 — Bimanual tool work with a held workpiece under the power-tool and payload stacks',
   'day-50-overhead-awkward-posture-tool-work': 'Day 50 — Overhead and awkward-posture tool work under the bimanual and power-tool stacks',
-  'day-51-ladders-elevated-work-platforms': 'Day 51 — Working on ladders and elevated work platforms under the overhead stack'
+  'day-51-ladders-elevated-work-platforms': 'Day 51 — Working on ladders and elevated work platforms under the overhead stack',
+  'day-52-confined-crawl-spaces': 'Day 52 — Confined spaces and crawl spaces under the elevated-access stack'
 
 }
