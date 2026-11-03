@@ -51,6 +51,7 @@ export default {
   'day-50-overhead-awkward-posture-tool-work': 'Day 50 — Overhead and awkward-posture tool work under the bimanual and power-tool stacks',
   'day-51-ladders-elevated-work-platforms': 'Day 51 — Working on ladders and elevated work platforms under the overhead stack',
   'day-52-confined-crawl-spaces': 'Day 52 — Confined spaces and crawl spaces under the elevated-access stack',
-  'day-53-water-wet-floors-spills': 'Day 53 — Water, wet floors, and spills under the confined-space stack'
+  'day-53-water-wet-floors-spills': 'Day 53 — Water, wet floors, and spills under the confined-space stack',
+  'day-54-doors-gates-thresholds': 'Day 54 — Doors, gates, and thresholds under the wet-surface stack'
 
 }
