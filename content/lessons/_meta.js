@@ -54,6 +54,7 @@ export default {
   'day-53-water-wet-floors-spills': 'Day 53 — Water, wet floors, and spills under the confined-space stack',
   'day-54-doors-gates-thresholds': 'Day 54 — Doors, gates, and thresholds under the wet-surface stack',
   'day-55-elevators-lifts': 'Day 55 — Elevators and lifts under the doorway stack',
-  'day-56-crowded-corridors-walkways': 'Day 56 — Crowded corridors and shared walkways under the elevator stack'
+  'day-56-crowded-corridors-walkways': 'Day 56 — Crowded corridors and shared walkways under the elevator stack',
+  'day-57-sidewalks-crosswalks-curb-ramps': 'Day 57 — Outdoor sidewalks, crosswalks, and curb ramps under the corridor stack'
 
 }
