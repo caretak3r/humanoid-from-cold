@@ -55,6 +55,7 @@ export default {
   'day-54-doors-gates-thresholds': 'Day 54 — Doors, gates, and thresholds under the wet-surface stack',
   'day-55-elevators-lifts': 'Day 55 — Elevators and lifts under the doorway stack',
   'day-56-crowded-corridors-walkways': 'Day 56 — Crowded corridors and shared walkways under the elevator stack',
-  'day-57-sidewalks-crosswalks-curb-ramps': 'Day 57 — Outdoor sidewalks, crosswalks, and curb ramps under the corridor stack'
+  'day-57-sidewalks-crosswalks-curb-ramps': 'Day 57 — Outdoor sidewalks, crosswalks, and curb ramps under the corridor stack',
+  'day-58-parking-lots-loading-docks': 'Day 58 — Parking lots and loading docks under the sidewalk stack'
 
 }
