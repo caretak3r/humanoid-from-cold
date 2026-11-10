@@ -57,6 +57,7 @@ export default {
   'day-56-crowded-corridors-walkways': 'Day 56 — Crowded corridors and shared walkways under the elevator stack',
   'day-57-sidewalks-crosswalks-curb-ramps': 'Day 57 — Outdoor sidewalks, crosswalks, and curb ramps under the corridor stack',
   'day-58-parking-lots-loading-docks': 'Day 58 — Parking lots and loading docks under the sidewalk stack',
-  'day-59-construction-sites-work-zones': 'Day 59 — Construction sites and active work zones under the dock stack'
+  'day-59-construction-sites-work-zones': 'Day 59 — Construction sites and active work zones under the dock stack',
+  'day-60-night-work-low-light': 'Day 60 — Night work and low light under the work-zone stack'
 
 }
