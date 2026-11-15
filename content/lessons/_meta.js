@@ -62,6 +62,7 @@ export default {
   'day-61-weather-rain-snow-fog-wind': 'Day 61 — Weather under the low-light stack',
   'day-62-heat-sun-dust': 'Day 62 — Heat, direct sun, and dust under the weather stack',
   'day-63-temporary-power-electrical-hazards': 'Day 63 — Temporary power and electrical hazards under the heat stack',
-  'day-64-noise-vibration-communications': 'Day 64 — Noise, vibration, and communications under the electrical stack'
+  'day-64-noise-vibration-communications': 'Day 64 — Noise, vibration, and communications under the electrical stack',
+  'day-65-hot-work-fire-hazards': 'Day 65 — Hot work and fire hazards under the loud-site stack'
 
 }
