@@ -64,6 +64,7 @@ export default {
   'day-63-temporary-power-electrical-hazards': 'Day 63 — Temporary power and electrical hazards under the heat stack',
   'day-64-noise-vibration-communications': 'Day 64 — Noise, vibration, and communications under the electrical stack',
   'day-65-hot-work-fire-hazards': 'Day 65 — Hot work and fire hazards under the loud-site stack',
-  'day-66-airborne-hazards-air-quality': 'Day 66 — Airborne hazards and air quality under the hot-work stack'
+  'day-66-airborne-hazards-air-quality': 'Day 66 — Airborne hazards and air quality under the hot-work stack',
+  'day-67-excavations-trenches': 'Day 67 — Excavations and trenches under the air-quality stack'
 
 }
