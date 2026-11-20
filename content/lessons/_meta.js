@@ -67,6 +67,7 @@ export default {
   'day-66-airborne-hazards-air-quality': 'Day 66 — Airborne hazards and air quality under the hot-work stack',
   'day-67-excavations-trenches': 'Day 67 — Excavations and trenches under the air-quality stack',
   'day-68-concrete-pours-formwork-rebar': 'Day 68 — Concrete pours, formwork, and rebar under the excavation stack',
-  'day-69-cranes-rigging-overhead-lifts': 'Day 69 — Cranes, rigging, and overhead lifts under the pour stack'
+  'day-69-cranes-rigging-overhead-lifts': 'Day 69 — Cranes, rigging, and overhead lifts under the pour stack',
+  'day-70-structural-steel-metal-decking': 'Day 70 — Structural steel erection and metal decking under the crane stack'
 
 }
