@@ -68,6 +68,7 @@ export default {
   'day-67-excavations-trenches': 'Day 67 — Excavations and trenches under the air-quality stack',
   'day-68-concrete-pours-formwork-rebar': 'Day 68 — Concrete pours, formwork, and rebar under the excavation stack',
   'day-69-cranes-rigging-overhead-lifts': 'Day 69 — Cranes, rigging, and overhead lifts under the pour stack',
-  'day-70-structural-steel-metal-decking': 'Day 70 — Structural steel erection and metal decking under the crane stack'
+  'day-70-structural-steel-metal-decking': 'Day 70 — Structural steel erection and metal decking under the crane stack',
+  'day-71-scaffolds-mast-climbers-aerial-lifts': 'Day 71 — Scaffolds, mast climbers, and aerial lifts under the steel stack'
 
 }
