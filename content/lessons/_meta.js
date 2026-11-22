@@ -69,6 +69,7 @@ export default {
   'day-68-concrete-pours-formwork-rebar': 'Day 68 — Concrete pours, formwork, and rebar under the excavation stack',
   'day-69-cranes-rigging-overhead-lifts': 'Day 69 — Cranes, rigging, and overhead lifts under the pour stack',
   'day-70-structural-steel-metal-decking': 'Day 70 — Structural steel erection and metal decking under the crane stack',
-  'day-71-scaffolds-mast-climbers-aerial-lifts': 'Day 71 — Scaffolds, mast climbers, and aerial lifts under the steel stack'
+  'day-71-scaffolds-mast-climbers-aerial-lifts': 'Day 71 — Scaffolds, mast climbers, and aerial lifts under the steel stack',
+  'day-72-construction-hoists-vertical-transport': 'Day 72 — Construction hoists and temporary vertical transport under the platform stack'
 
 }
