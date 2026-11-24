@@ -71,6 +71,7 @@ export default {
   'day-70-structural-steel-metal-decking': 'Day 70 — Structural steel erection and metal decking under the crane stack',
   'day-71-scaffolds-mast-climbers-aerial-lifts': 'Day 71 — Scaffolds, mast climbers, and aerial lifts under the steel stack',
   'day-72-construction-hoists-vertical-transport': 'Day 72 — Construction hoists and temporary vertical transport under the platform stack',
-  'day-73-roofing-roof-edge': 'Day 73 — Roofing and the roof edge under the hoist stack'
+  'day-73-roofing-roof-edge': 'Day 73 — Roofing and the roof edge under the hoist stack',
+  'day-74-glazing-curtain-wall-facade': 'Day 74 — Glazing, curtain wall, and façade work under the roof stack'
 
 }
